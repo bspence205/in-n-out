@@ -7,7 +7,7 @@
 :root {
     --inNout-text-color: #b70100;
     --inNout-background-color: #ffffff;
-    --inNout-box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+    --inNout-photo-box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
     --inNout-nav-hover-effect: underline; 
 }
 
