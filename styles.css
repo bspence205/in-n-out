@@ -75,11 +75,22 @@ a {
     }
 }
 
-.bg {
+.banner {
+    background: url(/images/bg.jpg);
     width: 100%;
-    z-index: -1;
+    display: flex;
 }
 
-.doubleDouble {
-    z-index: 1;
+.bannerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    color: var(--inNout-text-color);
 }
