@@ -21,12 +21,13 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%vw;
     max-width: 80vw;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: var(--inNout-photo-box-shadow);
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .header {
@@ -54,6 +55,7 @@ ul {
 a {
     text-decoration: none;
     color: var(--inNout-text-color);
+    font-size: 1.5rem;
 
 }
 
@@ -69,28 +71,85 @@ a {
     cursor: pointer;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1035px) {
     .headerLinks {
         display: none;
     }
 }
 
+@media (max-width: 755px) {
+    .quality {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
 .banner {
     background: url(/images/bg.jpg);
-    width: 100%;
+    background-size: cover;
+    max-width: 80vw;
+    height: 80vh;
     display: flex;
+    overflow: hidden;
+}
+
+.bannerSection {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .bannerLeft {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    /* border: 5px solid black; */
 }
+
+.bannerRight {
+    text-align: center;
+    overflow: hidden;
+    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border: 5px solid black; */
+}
+
+.bannerBottom {
+    padding-bottom: 15px;
+    width: 100%;
+    border-top: 10px solid var(--inNout-text-color);}
+
+h1 {
+    font-size: 4rem;
+    width: 400px;
+    margin-left: 50%;
+}
+
 
 button {
     background-color: transparent;
-    padding: 15px;
+    padding: 15px 80px 15px 80px;
     border-radius: 10px;
     text-transform: capitalize;
     color: var(--inNout-text-color);
+    border: 5px solid var(--inNout-text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
 }
+
+button:hover {
+    transform: scale(105%)
+}
+
+.doubleDouble {
+    width: 900px;
+    height: auto;
+}
+
